@@ -6,7 +6,8 @@ Autor nabokov = new Autor("Владимир", "Набоков");
 
         Book lolita = new Book("Лолита", nabokov, 1955);
         System.out.println("Книга " + lolita.getTitle());
-        System.out.println("Автор " + nabokov.getName()+" " + nabokov.getSurname());
+        System.out.println("Автор " + nabokov);
         System.out.println("Год издания " + lolita.getPublicationDate());
+        System.out.println(lolita);
     }
 }

@@ -11,4 +11,20 @@ public class Autor {
     public String getSurname() {
         return this.surname;
     }
+    @Override
+    public String toString() {
+        return "Имя " + this.name + ", Фамилия " + this.surname;
+    }
+    @Override
+    public int hashCode() {
+        return java.util.Objects.hash(name,surname);
+    }
+    @Override
+    public boolean equals(Object other) {
+        if (this.getClass() != other.getClass()) {
+            return false;
+        }
+        Autor c2 = (Autor) other;
+        return name.equals(c2.name);
+    }
 }

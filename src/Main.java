@@ -28,6 +28,7 @@ public class Main {
         System.out.println("Книга " + lolita.getTitle());
         System.out.println("Автор " + nabokov.getName()+" " + nabokov.getSurname());
         System.out.println("Год издания " + lolita.getPublicationDate());
+        System.out.println(lolita);
 
     Autor gogol = new Autor("Николай", "Гоголь");
         System.out.println("Имя: "+gogol.getName());
@@ -39,5 +40,6 @@ public class Main {
         System.out.println("Год издания " + deathSoul.getPublicationDate());
         deathSoul.setPublicationDate(2035);
         System.out.println("Год издания " + deathSoul.getPublicationDate());
+        System.out.println(deathSoul);
 }
     }
