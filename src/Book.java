@@ -26,10 +26,13 @@ public class Book {
     }
     @Override
     public boolean equals(Object other) {
+        if (this ==other){
+            return true;
+        }
         if (this.getClass() != other.getClass()) {
             return false;
         }
         Book c2 = (Book) other;
-        return title.equals(c2.title);
+        return title.equals(c2.title)&& autor.equals(c2.autor)&&publicationDate==c2.publicationDate;
     }
 }

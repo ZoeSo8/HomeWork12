@@ -21,10 +21,13 @@ public class Autor {
     }
     @Override
     public boolean equals(Object other) {
+        if (this==other){
+            return true;
+        }
         if (this.getClass() != other.getClass()) {
             return false;
         }
         Autor c2 = (Autor) other;
-        return name.equals(c2.name);
+        return name.equals(c2.name)&& surname.equals(c2.surname);
     }
 }
